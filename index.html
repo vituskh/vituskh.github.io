@@ -9,8 +9,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Vitusverden</title>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css" />
-	<script src="https://kit.fontawesome.com/7079259d72.js" crossorigin="anonymous"></script>
+	<script src="https://vitusverden.github.io/vitusresources/script.js"></script> <!--Vitus's navbar & dark theme osv-->
 </head>
 
 <body id="body">
@@ -37,41 +36,6 @@
 		</section>
 	</div>
 
-	<style>
-		.dark-mode {
-			background-color: #1f1f1f;
-			color: #dddddd;
-		}
-	</style>
-	<script>
-		var theme = "light"
-		if (localStorage.getItem("lasttheme") == "dark") {
-			changetheme("dark")
-		}
-		function changetheme(type) {
-			if (type == "dark") {
-				if (theme == "light") {
-					localStorage.setItem("lasttheme", "dark")
-					document.getElementById("body").classList.add("dark-mode")
-					document.getElementById("bulbdiv").classList.add("dark-mode")
-					theme = "dark"
-				}
-			} else {
-				if (theme == "dark") {
-					localStorage.setItem("lasttheme", "light")
-					document.getElementById("body").classList.remove("dark-mode")
-					document.getElementById("bulbdiv").classList.remove("dark-mode")
-					theme = "light"
-
-				}
-			}
-		}
-		function fliptheme() {
-			if(theme == "light") {changetheme("dark")}
-			else {changetheme("light")}
-		}
-		scrollTo(0,0)
-	</script>
 </body>
 
 </html>
